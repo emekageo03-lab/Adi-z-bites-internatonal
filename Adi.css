@@ -124,12 +124,12 @@ body {
     color: #333;  /* Dark text for readability */
 }
 
-.image1 { background-image: url('cake.jpg'); }
-.image2 { background-image: url('noodles.jpg'); }
-.image3 { background-image: url('rolls.jpg'); }
-.image4 { background-image: url('cake 2.jpg'); }
-.image5 { background-image: url('meatpie.jpg'); }
-.image6 { background-image: url('donuts.jpg'); }
+.image1 { background-image: url('Cake.jpg'); }
+.image2 { background-image: url('Noodles & Egg.jpg'); }
+.image3 { background-image: url('Scotch Egg.jpg'); }
+.image4 { background-image: url('Buttercream layered Cake.jpg'); }
+.image5 { background-image: url('Meatpie.jpg'); }
+.image6 { background-image: url('Milky Donuts.jpg'); }
 
 /* Responsive adjustment */
 @media (max-width: 600px) {
