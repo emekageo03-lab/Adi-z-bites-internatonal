@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.flyer {
+    width: 8.5in;
+    height: 11in;
+    background: linear-gradient(135deg, #black, #300008);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 0.5in;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.header {
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 0.2in;
+    font-family: 'Georgia', serif;
+    letter-spacing: 2px;
+}
+
+.slogan {
+    font-size: 1.2em;
+    color: #FFD700;
+    text-shadow: 1px 1px 3px #000;
+    margin-bottom: 0.5in;
+    font-style: italic;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 0.5in;
+}
+
+.service-item {
+    width: 90%;
+    background: #fff;
+    padding: 0.25in;
+    margin: 0.1in;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px #FFD700;
+    font-size: 1.3em;
+    color: #FFD700, #000);
+    text-align: left;
+}
+
+.service-item h3 {
+    font-size: 1.5em;
+    color: #ff4500;
+    margin-bottom: 0.1in;
+}
+
+.service-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-item li {
+    margin: 0.1in 0;
+    position: relative;
+    padding-left: 1em;
+}
+
+.service-item li:before {
+    content: "★";
+    color: #ff4500;
+    position: absolute;
+    left: 0;
+   
+}
+
+/* Image grid layout *//* Ensure the flyer takes full height and scrolls */
+.flyer {
+    width: 100%;
+    max-width: 100%; /* Prevents overflow */
+    margin: 0 auto;
+    padding: 0.5in;
+    box-sizing: border-box; /* Includes padding in width/height */
+    overflow-y: auto; /* Allows vertical scrolling if content overflows */
+    min-height: 100vh; /* At least full viewport height */
+
+}
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 0.2in; /* Space between images */
+    margin: 0.3in auto; /* Centers and adds space around */
+    max-width: 95%; /* Keeps it within the flyer */
+    padding: 0.in;
+    background-color: #f9f9f9; /* Light background like the image */
+}
+
+.image-container {
+    text-align: center; /* Centers the image and captions */
+}
+
+.image-placeholder {
+    width: 100%; /* Fills the grid cell */
+    height: 2in; /* Consistent height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.image-caption {
+    font-size: 1.3em;  /* Smaller text */
+    font-weight: bold; /* Bold for emphasis */
+    margin-top: 0.1in; /* Space between image and caption */
+    color: #333;  /* Dark text for readability */
+}
+
+.image1 { background-image: url('cake.jpg'); }
+.image2 { background-image: url('noodles.jpg'); }
+.image3 { background-image: url('rolls.jpg'); }
+.image4 { background-image: url('cake 2.jpg'); }
+.image5 { background-image: url('meatpie.jpg'); }
+.image6 { background-image: url('donuts.jpg'); }
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.15in;
+    }
+    .image-placeholder {
+        height: 1.5in;
+    }
+}
+
+.tagline {
+    font-size: 1.5em;
+    color: #FFD700;
+    text-shadow: 1px 1px 3px #000;
+    font-weight: bold;
+    margin-bottom: 0.3in;
+}
+
+.contact {
+    text-align: center;
+    margin-top: 0.5in;
+    padding: 0.2in;
+    font-size: 1em;
+    color: #333;
+    background-color: #FFD700;
+    border-top: 1px solid #D4AF37;
+}
+
+.contact a {
+    color: #007bff; /* Blue link color */
+    text-decoration: underline; /* Underline to indicate clickable */
+    font-weight: bold;
+}
+
+.contact a:hover {
+    color: #0056b3; /* Darker on hover */
+}
+
+@media (max-width: 990px) {
+    .images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-placeholder {
+        height: 2.0in;
+    }
+    .contact {
+        margin-top: 0.3in;
+        font-size: 0.9em;
+    }
+}
+.header {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #FFD700, #D4AF37,#ff4500, #ff4500);
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  text-align: center;
+}
